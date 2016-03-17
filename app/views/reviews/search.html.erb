@@ -1,0 +1,11 @@
+<%= render "search_form" %>
+<h2>Results: <%= @results.count %></h2>
+<% if @results.present? %>
+  <div class="results">
+    <% @results.each  do |result| %>
+      <p class="result"><%= result %></div>
+    <% end %>
+  </div>
+<% else %>
+  <p>Nothing found</p>
+<% end %>

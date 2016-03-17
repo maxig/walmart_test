@@ -1,0 +1,7 @@
+<%= form_tag(reviews_search_path, method: :post) do %>
+  <%= label_tag :id, "Product id:" %>
+  <%= text_field_tag :id, params[:id] %>
+  <%= label_tag :search_string, "Search for:" %>
+  <%= text_field_tag :search_string, params[:search_string]  %>
+  <%= submit_tag "Search"  %>
+<% end %>
